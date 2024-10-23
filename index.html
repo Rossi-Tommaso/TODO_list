@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <header>
+        <label for="todo-item">To Do item:</label>
+        <input name="todo-item" type="text" maxlength="50" min="1">
+        <label for="todo-priority">Priority:</label>
+        <select name="todo-priority">
+            <option value="" disabled selected hidden></option>
+            <option value="maschio">High</option>
+            <option value="femmina">Medium</option>
+            <option value="femmina">Low</option>
+        </select>
+    </header>
+    <main></main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script type="module" src="./script/firebase.js"></script>
+</body>
+</html>
